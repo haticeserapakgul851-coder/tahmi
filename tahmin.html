@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d3af085b86716c081a608c5f6b7e2fb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d3af085b86716c081a608c5f6b7e2fb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d3af085b86716c081a608c5f6b7e2fb = L.map(
+                "map_2d3af085b86716c081a608c5f6b7e2fb",
+                {
+                    center: [39.0, 35.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_33e3f027bbc3a3db5de6fec77f9f103a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_33e3f027bbc3a3db5de6fec77f9f103a.addTo(map_2d3af085b86716c081a608c5f6b7e2fb);
+        
+    
+            var marker_83278770e57f4e0903f9b39eef530c44 = L.marker(
+                [41.0082, 28.9784],
+                {
+}
+            ).addTo(map_2d3af085b86716c081a608c5f6b7e2fb);
+        
+    
+            var icon_14829f4a556fb3feabe3b9937f3d75ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b67f9bad32431eddf2cabbb864f19c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e3da76c348a714452d6b821c4348310 = $(`<div id="html_9e3da76c348a714452d6b821c4348310" style="width: 100.0%; height: 100.0%;">     <b>İstanbul</b><br>     Sıcaklık: 25°C<br>     Tahmini Yangın Sayısı: 781.97<br><br>     En Yakın İl: Bursa<br>     Tahmini Yangın: 872.51     </div>`)[0];
+                popup_4b67f9bad32431eddf2cabbb864f19c6.setContent(html_9e3da76c348a714452d6b821c4348310);
+            
+        
+
+        marker_83278770e57f4e0903f9b39eef530c44.bindPopup(popup_4b67f9bad32431eddf2cabbb864f19c6)
+        ;
+
+        
+    
+    
+                marker_83278770e57f4e0903f9b39eef530c44.setIcon(icon_14829f4a556fb3feabe3b9937f3d75ec);
+            
+    
+            var marker_1dcf5eec8e200f330d1e2623ae4a5b7c = L.marker(
+                [39.9334, 32.8597],
+                {
+}
+            ).addTo(map_2d3af085b86716c081a608c5f6b7e2fb);
+        
+    
+            var icon_3674e589c46156da601ceb91c06197ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b45fc6b235c1161b57f8a8c9a29b17e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b5b31601d530e913aec8d95bdc5808b = $(`<div id="html_1b5b31601d530e913aec8d95bdc5808b" style="width: 100.0%; height: 100.0%;">     <b>Ankara</b><br>     Sıcaklık: 30°C<br>     Tahmini Yangın Sayısı: 1234.65<br><br>     En Yakın İl: Bursa<br>     Tahmini Yangın: 872.51     </div>`)[0];
+                popup_b45fc6b235c1161b57f8a8c9a29b17e5.setContent(html_1b5b31601d530e913aec8d95bdc5808b);
+            
+        
+
+        marker_1dcf5eec8e200f330d1e2623ae4a5b7c.bindPopup(popup_b45fc6b235c1161b57f8a8c9a29b17e5)
+        ;
+
+        
+    
+    
+                marker_1dcf5eec8e200f330d1e2623ae4a5b7c.setIcon(icon_3674e589c46156da601ceb91c06197ba);
+            
+    
+            var marker_ad368983c72059ac7a4ae78b41e0cc5e = L.marker(
+                [38.4237, 27.1428],
+                {
+}
+            ).addTo(map_2d3af085b86716c081a608c5f6b7e2fb);
+        
+    
+            var icon_1707f4df6a0e2bf88ee8481678c7946b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bbab33772874f74fbfe28a5de22e9f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87f63ea16730a7a46e8bfd547c339809 = $(`<div id="html_87f63ea16730a7a46e8bfd547c339809" style="width: 100.0%; height: 100.0%;">     <b>İzmir</b><br>     Sıcaklık: 28°C<br>     Tahmini Yangın Sayısı: 1053.58<br><br>     En Yakın İl: Bursa<br>     Tahmini Yangın: 872.51     </div>`)[0];
+                popup_7bbab33772874f74fbfe28a5de22e9f0.setContent(html_87f63ea16730a7a46e8bfd547c339809);
+            
+        
+
+        marker_ad368983c72059ac7a4ae78b41e0cc5e.bindPopup(popup_7bbab33772874f74fbfe28a5de22e9f0)
+        ;
+
+        
+    
+    
+                marker_ad368983c72059ac7a4ae78b41e0cc5e.setIcon(icon_1707f4df6a0e2bf88ee8481678c7946b);
+            
+    
+            var marker_84878200f8ae6a8c0d8455216cd55c41 = L.marker(
+                [40.195, 29.06],
+                {
+}
+            ).addTo(map_2d3af085b86716c081a608c5f6b7e2fb);
+        
+    
+            var icon_1edb7136aeb39f911cb87dfbaaff1e58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a276ab7dae62094e0adee74bb86d6c13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0d62179b8dd49064d69ed11bae0f053 = $(`<div id="html_e0d62179b8dd49064d69ed11bae0f053" style="width: 100.0%; height: 100.0%;">     <b>Bursa</b><br>     Sıcaklık: 26°C<br>     Tahmini Yangın Sayısı: 872.51<br><br>     En Yakın İl: İstanbul<br>     Tahmini Yangın: 781.97     </div>`)[0];
+                popup_a276ab7dae62094e0adee74bb86d6c13.setContent(html_e0d62179b8dd49064d69ed11bae0f053);
+            
+        
+
+        marker_84878200f8ae6a8c0d8455216cd55c41.bindPopup(popup_a276ab7dae62094e0adee74bb86d6c13)
+        ;
+
+        
+    
+    
+                marker_84878200f8ae6a8c0d8455216cd55c41.setIcon(icon_1edb7136aeb39f911cb87dfbaaff1e58);
+            
+    
+            var marker_760d36dfcf07f78fe711e61ecd23c734 = L.marker(
+                [36.8969, 30.7133],
+                {
+}
+            ).addTo(map_2d3af085b86716c081a608c5f6b7e2fb);
+        
+    
+            var icon_81817db67294cd86f59bc9095b741a4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9badd731ba611c0112086c182e3e7a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95fa2f4cc18d09e209d1cb5ed39f8c8a = $(`<div id="html_95fa2f4cc18d09e209d1cb5ed39f8c8a" style="width: 100.0%; height: 100.0%;">     <b>Antalya</b><br>     Sıcaklık: 32°C<br>     Tahmini Yangın Sayısı: 1415.72<br><br>     En Yakın İl: İzmir<br>     Tahmini Yangın: 1053.58     </div>`)[0];
+                popup_c9badd731ba611c0112086c182e3e7a8.setContent(html_95fa2f4cc18d09e209d1cb5ed39f8c8a);
+            
+        
+
+        marker_760d36dfcf07f78fe711e61ecd23c734.bindPopup(popup_c9badd731ba611c0112086c182e3e7a8)
+        ;
+
+        
+    
+    
+                marker_760d36dfcf07f78fe711e61ecd23c734.setIcon(icon_81817db67294cd86f59bc9095b741a4d);
+            
+</script>
+</html>
